@@ -70,17 +70,13 @@ export default function Navbar() {
                 <Link href="/laboratorios" className="text-gray-700 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
                   Aplicaciones
                 </Link>
-                <Link href="/blog-tecnico" className="text-gray-700 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
-                  Blog Técnico
-                </Link>
+                {/* OCULTOS:
+                   - Blog Técnico
+                   - Recursos Académicos
+                   - Investigación
+                */}
                 <Link href="/equipo" className="text-gray-700 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
                   Equipo
-                </Link>
-                <Link href="/recursos-academicos" className="text-gray-700 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
-                  Recursos Académicos
-                </Link>
-                <Link href="/investigacion" className="text-gray-700 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
-                  Investigación
                 </Link>
               </div>
             </div>
@@ -95,17 +91,13 @@ export default function Navbar() {
             <Link href="/laboratorios" className="text-gray-700 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
               Laboratorios
             </Link>
-            <Link href="/blog-tecnico" className="text-gray-700 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
-              Blog Técnico
-            </Link>
+             {/* OCULTOS EN MÓVIL TAMBIÉN:
+                - Blog Técnico
+                - Recursos Académicos
+                - Investigación
+             */}
             <Link href="/equipo" className="text-gray-700 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
               Equipo
-            </Link>
-            <Link href="/recursos-academicos" className="text-gray-700 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
-              Recursos Académicos
-            </Link>
-            <Link href="/investigacion" className="text-gray-700 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
-              Investigación
             </Link>
           </div>
         </div>
