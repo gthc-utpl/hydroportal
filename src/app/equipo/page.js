@@ -7,20 +7,20 @@ const equipo = [
         nombre: 'Fernando Rodrigo Oñate Valdivieso',
         rol: 'Director del Proyecto',
         filiacion: 'Loja, UCG-UTPL (Campus San Cayetano)',
-        telefono: '(593) 07 2570275 Ext: 2613',
+        telefono: '(593) 07 2570275 Ext: 2515',
         email: 'fronate.v@gmail.com',
-        web: 'www.fronate.pro.ec',
+        web: 'https://investigacion.utpl.edu.ec/fronate',
         descripcion: 'Fernando lidera el proyecto con experiencia en dirección y manejo de equipos multidisciplinarios.',
         imagen: '/images/Oñate.jpg'
     },
     {
-        nombre: 'Luis Santiago Quiñones Cuenca',
-        rol: 'Administrador Web',
+        nombre: 'Santiago Quiñones Cuenca',
+        rol: 'Investigador y DesarrolladorWeb',
         filiacion: 'Loja, UCG-UTPL (Campus San Cayetano)',
-        telefono: '(593) 07 2570275 Ext: 2196',
+        telefono: '(593) 07 2570275 Ext: 3211',
         email: 'lsquinones@gmail.com',
-        web: 'www.youtube.com/lsantiago84',
-        descripcion: 'Luis gestiona la administración web del proyecto, asegurando la funcionalidad y eficiencia de la plataforma.',
+        web: 'https://investigacion.utpl.edu.ec/lsquinones',
+        descripcion: 'Santiago gestiona la administración web del proyecto, asegurando la funcionalidad y eficiencia de la plataforma.',
         imagen: '/images/santiago.jpg'
     },
     {
