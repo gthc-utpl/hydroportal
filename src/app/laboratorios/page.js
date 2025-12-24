@@ -18,7 +18,7 @@ export default function Simulaciones() {
     ];
     const categoriasDiseño = [
         'Hidráulica de canales',
-
+        'Encauzamiento', // <--- Nueva categoría
     ];
 
     const categoriasAnali = [
@@ -81,6 +81,24 @@ export default function Simulaciones() {
         { id: 41, title: 'Tirante Normal Seccion Parabólica', description: 'Relaciones Geométricas de una sección parabólica.', link: '/Experimentos/TiranteNSeccionParabolica', category: 'Hidráulica de canales' },
         { id: 42, title: 'Tirante Normal (S. trapezoidal, triangular)', description: 'Aplicando el Método de Newton Raphson. Un flujo uniforme y permanente recibe el nombre de flujo normal', link: '/Experimentos/TiranteNSeccionTrapezoidal', category: 'Hidráulica de canales' },
         { id: 43, title: 'Tirante Normal (Seccion circular)', description: 'Aplicando el Método de la Secante. En este método el algoritmo que permite el cálculo de la raíz aproximada para la solución de la ecuación f(X)=0.', link: '/Experimentos/TiranteNSeccionCircular', category: 'Hidráulica de canales' },
+        // --- NUEVOS EXPERIMENTOS ---
+        { id: 44, title: 'Modelo Autorregresivo de orden p - AR (p)', description: 'El Modelo Autorregresivo es un proceso donde la variable independiente, está explicada por la misma variable pero retardada uno o mas periodos.', link: 'https://0f2cc3e35fe9.ngrok-free.app/hydrovlexperimentos/simulaci%C3%B3n/arima/AR_p.aspx?idioma=es-ES', category: 'Análisis estocástico' },
+        { id: 45, title: 'Modelo de Media Móvil de orden q - MA (q)', description: 'El Modelo de Media Móvil es un proceso donde la variable independiente, está explicada por perturbaciones aleatorias ocurridas en periodos anteriores.', link: 'https://0f2cc3e35fe9.ngrok-free.app/hydrovlexperimentos/simulaci%C3%B3n/arima/MA_q.aspx?idioma=es-ES', category: 'Análisis estocástico' },
+        { id: 46, title: 'Modelo Autorregresivo de Media Móvil de orden p,q - ARMA (p,q)', description: 'El Modelo Autorregresivo de Media Móvil, es un proceso donde la variable independiente está explicada por retardos y perturbaciones aleatorias de la misma variable, retardada uno o más periodos.', link: 'https://0f2cc3e35fe9.ngrok-free.app/hydrovlexperimentos/simulaci%C3%B3n/arima/ARMA_pq.aspx?idioma=es-ES', category: 'Análisis estocástico' },
+        { id: 47, title: 'Modelo de Autorregresivo Integrado de Media Móvil de orden p,d,q - ARIMA (p,d,q)', description: 'El Modelo Autorregresivo Integrado de Media Móvil, es un proceso donde la variable independiente, está explicada por retardos de la misma variable y por perturbaciones aleatorias también retardadas, pero además la serie es diferenciada para alcanzar la estacionariedad.', link: 'https://0f2cc3e35fe9.ngrok-free.app/hydrovlexperimentos/simulaci%C3%B3n/arima/ARIMA_pdq.aspx?idioma=es-ES', category: 'Análisis estocástico' },
+        { id: 48, title: 'Modelo Estacional Autorregresivo Integrado de Media Móvil - SARIMA (p,d,q) (P,D,Q)', description: 'El Modelo Estacional Autorregresivo Integrado de Media Móvil, se aplica a series que tienen periodicidad, aquí la variable independiente es descrita por retardos y perturbaciones aleatorias retardadas de la misma variable, pero además la serie es diferenciada para alcanzar la estacionariedad y eliminar la estacionalidad.', link: 'https://0f2cc3e35fe9.ngrok-free.app/hydrovlexperimentos/simulaci%C3%B3n/arima/SARIMA_pdqS.aspx?idioma=es-ES', category: 'Análisis estocástico' },
+
+        { id: 49, title: 'Método de Theis: Determinación de coeficientes de transmisibilidad (T) y de almacenamiento (S)', description: 'Permite mediante el método de Theis la determinación de los coeficientes característicos del acuífero: coeficiente de transmisibilidad (T) y de almacenamiento (S) aplicando el proceso de superposición de gráficas.', link: 'https://0f2cc3e35fe9.ngrok-free.app/hydrovlexperimentos/simulaci%C3%B3n/hidraulicadepozos/Hidraulica_de_pozos.aspx?Hpozos=5&idioma=es-ES', category: 'Hidráulica de Pozos' },
+
+        { id: 50, title: 'Modelo de Lluvía Escorrentía', description: 'Simula la escorrentía superficial, mediante el hidrograma unitario adimensional del S.C.s y el tránsito de avenidas por el método de Muskingum Cunge.', link: 'https://0f2cc3e35fe9.ngrok-free.app/hydrovlexperimentos/simulaci%C3%B3n/modelolluviaescorentia/Modelo_lluvia_escorrentia.aspx?idioma=es-ES', category: 'Modelo de Lluvia Escorrentía' },
+        { id: 51, title: 'Modelo de Lluvía Escorrentía usando datos radar', description: 'Simula el comportamiento de las subcuencas que conforman la hoya de Loja durante un evento de precipitación, aplicando datos de radar LAWR, datos morfológicos de las cuencas, del cauce principal, hidrogramas unitarios sintéticos y tránsito de avenidas por el Método Muskingum - Cunge.', link: 'https://0f2cc3e35fe9.ngrok-free.app/ModeloLluviaEscorrentia1.2/Modelo1.aspx?idioma=es-ES', category: 'Modelo de Lluvia Escorrentía' },
+
+        { id: 52, title: 'Transporte de sedimentos (Total y de Fondo)', description: 'Permite calcular el material que es arrastrado por la corriente en la capa de fondo que tiene un espesor igual al doble del diámetro de la partícula considerada. Están disponibles los métodos de Duboys-Straub, Schoklits, Shields, Meyer-Peter y Muller, entre otros.', link: 'https://0f2cc3e35fe9.ngrok-free.app/hydrovlexperimentos/simulaci%C3%B3n/tSedimentos/transedimentf.aspx?idioma=es-ES', category: 'Transporte de sedimentos' },
+
+        { id: 53, title: 'Correlación Ortogonal', description: 'Realiza el análisis de series de datos de precipitación mensual comparando los datos de la estación a rellenar con datos de otras estaciones mediante el gráfico de series temporales y comprobando la homogeneidad de las estaciones mediante las curvas de doble masa.', link: 'https://0f2cc3e35fe9.ngrok-free.app/hydrovlexperimentos/an%C3%A1lisis/correlacionortogonal.aspx?idioma=es-ES', category: 'Correlación Ortogonal' },
+        { id: 54, title: 'Funciones de Distribución de Probabilidad', description: 'Permite realizar el análisis de valores extremos mediante la aplicación de funciones de distribución de probabilidad. Se ha implementado las funciones de distribuciones de probabilidad: Normal, Log-Normal, Pearson III, Log-Pearson III y Gumbel.', link: 'https://0f2cc3e35fe9.ngrok-free.app/hydrovlexperimentos/an%C3%A1lisis/Funciones_Distribucion_Probabilidad.aspx?idioma=es-ES', category: 'Análisis Probabilístico' },
+
+        { id: 55, title: 'Encauzamiento y control de torrrentes', description: 'Simulación de encauzamiento y control de torrentes.', link: 'https://0f2cc3e35fe9.ngrok-free.app/hydrovlexperimentos/dise%C3%B1o/DisenoCauces/DisenoCauces.aspx?idioma=es-ES', category: 'Encauzamiento' },
     ];
 
 
